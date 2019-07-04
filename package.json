@@ -11,7 +11,9 @@
   ],
   "scripts": {
     "lint": "eslint-ci *.js lib/*.js data/*.js test/*.js bin/*",
-    "test": "jest --coverage && npm run lint && gulp && size-limit"
+    "test": "jest --coverage && npm run lint && gulp && size-limit",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Andrey Sitnik <andrey@sitnik.ru>",
   "license": "MIT",
@@ -26,7 +28,8 @@
     "normalize-range": "^0.1.2",
     "num2fraction": "^1.2.2",
     "postcss": "^7.0.11",
-    "postcss-value-parser": "^3.3.1"
+    "postcss-value-parser": "^3.3.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -147,5 +150,6 @@
         }
       ]
     ]
-  }
+  },
+  "snyk": true
 }

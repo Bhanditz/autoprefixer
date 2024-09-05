@@ -20,8 +20,8 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "@babel/register": "^7.0.0",
-    "browserslist": "^4.4.0",
+    "@babel/register": "^7.13.16",
+    "browserslist": "^4.11.1",
     "caniuse-lite": "^1.0.30000928",
     "normalize-range": "^0.1.2",
     "num2fraction": "^1.2.2",
